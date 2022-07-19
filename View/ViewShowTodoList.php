@@ -1,11 +1,11 @@
 <?php
 
-require_once "../Helper/Input.php";
-require_once "../Controller/showTodoList.php";
-require_once "../View/ViewAddTodo.php";
-require_once "../View/ViewRemoveTodo.php";
-require_once "../View/ViewEditTodo.php";
-require_once "../Model/TodoList.php";
+require_once __DIR__ . "/../Helper/Input.php";
+require_once __DIR__ . "/../Controller/showTodoList.php";
+require_once __DIR__ . "/../View/ViewAddTodo.php";
+require_once __DIR__ . "/../View/ViewRemoveTodo.php";
+require_once __DIR__ . "/../View/ViewEditTodo.php";
+require_once __DIR__ . "/../Model/TodoList.php";
 
 function viewShowTodoList(){
 
@@ -14,7 +14,6 @@ function viewShowTodoList(){
         showTodoList();
         
         echo<<<INSTRUKSI
-
         Menu
         1. Tambah Todo
         2. Hapus Todo
@@ -39,5 +38,5 @@ function viewShowTodoList(){
         }
     }
 
-    echo "anda keluar dari apilkasi" . PHP_EOL;
+    echo "anda keluar dari aplikasi" . PHP_EOL;
 }
